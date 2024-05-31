@@ -7,7 +7,7 @@ import Profile from './components/Profile/Profile';
 
 function App() {
   const token = localStorage.getItem('accessToken');
-
+  {/* Deberia llamar al componente deseado o bien retornarlo al LOGIN */}
   if(!token) {
     return (
       <>

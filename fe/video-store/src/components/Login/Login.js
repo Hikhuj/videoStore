@@ -26,6 +26,7 @@ function Login() {
       password
     });
     if ('token' in response) {
+      /* */
       swal("Success", "success", {
         buttons: false,
         timer: 2000,
@@ -33,6 +34,7 @@ function Login() {
       .then((value) => {
         localStorage.setItem('token', response['token']);
         localStorage.setItem('user', JSON.stringify(response['user']));
+        /* Using react router , history.push() */
         window.location.href = '/profile';
       });
     } else {

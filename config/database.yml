@@ -16,6 +16,8 @@ development:
   <<: *default
   database: videoStore
   host: host.docker.internal # Use 'host.docker.internal' for macOS/Windows, or your host machine's IP for Linux
+  username: root
+  password: pass1234
 
 
 # Warning: The database defined as "test" will be erased and
