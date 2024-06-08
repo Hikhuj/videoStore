@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+	binding.pry
 	require "securerandom"
 
 	# Adds virtual attributes for authentication

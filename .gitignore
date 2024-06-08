@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore .DS_Store
+.DS_Store
+
 # Ignore all environment files (except templates).
 /.env*
 !/.env*.erb
@@ -16,6 +19,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/bin
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
@@ -33,3 +37,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+.byebug_history
+/public/cache
