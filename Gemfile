@@ -15,7 +15,7 @@ gem "jbuilder"
 gem 'jwt'
 
 # Use it to debugg project on binding.pry
-# gem 'pry-byebug'
+gem 'pry-byebug'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -59,7 +59,8 @@ group :development, :test do
   gem 'mysql2'
   # Adds STEP, NEXT, FINISH and CONTINUE commands and breakpoints to Pry using byebug
   # http://rubydoc.info/gems/pry-byebug/3.4.0
-  gem 'pry-byebug', '3.4.0'
+  # gem 'pry-byebug', '3.4.0'
+  gem 'pry-nav'
 end
 
 group :development do
