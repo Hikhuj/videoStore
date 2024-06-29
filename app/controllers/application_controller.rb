@@ -9,6 +9,7 @@ class ApplicationController < ActionController::API
 	    def authenticate_request
 			## Debe retornar un JSON de OK
 			## Para comprender que la session es AUTH o NOT
+			binding.pry
 	    	header = request.headers["Authorization"]
 	    	header = header.split(" ").last if header
 	    	decoded= jwt_decode(header)
